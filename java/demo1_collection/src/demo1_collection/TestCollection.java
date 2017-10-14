@@ -30,7 +30,6 @@ public class TestCollection {
 			it.remove();
 		}
 		System.out.println(collection.size());
-	
 	}
 
 }

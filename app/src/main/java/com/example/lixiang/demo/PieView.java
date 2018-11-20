@@ -13,7 +13,7 @@ public class PieView extends View {
     private int[] angles={100,30,60,80,90};
     private int[] colors={Color.GREEN,Color.RED,Color.BLUE,Color.CYAN,Color.DKGRAY};
     private Paint paint=new Paint(Paint.ANTI_ALIAS_FLAG);
-    private int floatIndex=3;
+    private int floatIndex=2;
     private int floatDis=40;
     public PieView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);

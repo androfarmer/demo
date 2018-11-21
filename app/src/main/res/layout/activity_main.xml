@@ -6,9 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.lixiang.demo.DashView
+    <com.example.lixiang.demo.CircleImageView
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/darker_gray"/>
+        android:layout_height="match_parent" />
+    <!--<ImageView-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@drawable/lixiang"/>-->
+
+    <!--<com.example.lixiang.demo.ProvinceView-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+
+    <!--<com.example.lixiang.demo.PointerView-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/darker_gray"/>-->
 
 </LinearLayout>

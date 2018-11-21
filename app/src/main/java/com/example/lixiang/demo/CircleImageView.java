@@ -23,13 +23,17 @@ public class CircleImageView extends View {
     {
         bitmap=Utils.getBitmap(getResources(),R.drawable.lixiang,400);
         paint.setStrokeWidth(borderWidth);
+
+//        setLayerType(LAYER_TYPE_HARDWARE,null);//gpu,离屏缓冲
+//        setLayerType(LAYER_TYPE_SOFTWARE,null);//cpu,离屏缓冲
+//        setLayerType(LAYER_TYPE_NONE,null);//不使用离屏缓冲
     }
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.save();
         canvas.translate(100,100);
-        int saveCount= canvas.saveLayer(0,0,bitmap.getWidth(),bitmap.getHeight(),paint);
+        int saveCount= canvas.saveLayer(new RectF(0,0,bitmap.getWidth(),bitmap.getHeight()),paint);
         paint.setStyle(Paint.Style.FILL);
         canvas.drawCircle(bitmap.getWidth()/2,bitmap.getHeight()/2,+bitmap.getWidth()/2,paint);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));

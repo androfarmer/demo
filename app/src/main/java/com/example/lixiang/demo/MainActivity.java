@@ -19,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         /**
+        ColorView colorView = findViewById(R.id.view);
+        colorView.run();
+         */
+
+        /**
         ProvinceView provinceView = findViewById(R.id.view);
         provinceView.runProvince();
          */

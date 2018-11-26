@@ -6,10 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.lixiang.demo.CircleImageView
+
+
+    <com.example.lixiang.demo.DrawableView
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"/>
+
+    <!--<com.example.lixiang.demo.ColorView-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/darker_gray"/>-->
+
+    <!--<com.example.lixiang.demo.CircleImageView-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
     <!--<ImageView-->
         <!--android:id="@+id/view"-->
         <!--android:layout_width="100dp"-->
